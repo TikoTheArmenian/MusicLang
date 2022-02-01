@@ -1,0 +1,74 @@
+{
+
+
+
+
+    //hello this is my example program
+
+
+    //here we are making 3 unique synths
+
+    makeSound (randomRange 200 600) (randomRange 200 600) 1000 500 "_soundRandom1"
+
+    makeSound (randomRange 200 600) (randomRange 200 600) 1000 500 "_soundRandom2"
+
+    makeSound (randomRange 200 600) (randomRange 200 600) 1000 500 "_soundRandom3"
+
+
+    // here we will play them each three times
+
+    loop 3
+    {
+    play "_soundRandom1"
+    wait 500
+    play "_soundRandom2"
+    wait 500
+    play "_soundRandom3"
+    wait 500
+    }
+
+    wait 500
+
+
+
+
+    // and here is a wacky thing I have created
+
+    play "_soundRandom"
+    n = 0
+    loop 100
+    {
+        if ((n%3)==0)
+        {
+            playI Tuba C# 1 0
+        }
+        playI Piano C# 1 0
+        playI Flute D 1 0
+        wait 100
+        n = n + 1
+
+        if (n >= 40)
+            {
+                playD PEDAL_HI_HAT 1 0
+                if ((n%2)==0)
+                {
+                    playD BASS_DRUM 1 0
+                }
+
+            }
+        if ( n >= 50 )
+        {
+            if ((n%5)==0)
+            {
+                play "dongg"
+            }
+            playI Sitar E 1 0
+        }
+
+    }
+
+
+
+
+
+}

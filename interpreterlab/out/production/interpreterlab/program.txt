@@ -1,0 +1,9 @@
+{
+    block "printThings"
+    {
+        print "hello"
+        print "hi"
+    }
+    run "printThings"
+    run "printThings"
+}

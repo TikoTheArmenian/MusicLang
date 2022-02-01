@@ -1,0 +1,88 @@
+{
+    t = 100
+    n = 0
+    r = randomRange 1 8
+    r1 = randomRange 1 8
+
+    block "drum"
+    {
+
+        if ( (n % 4) == 0)
+        {
+            playD BASS_DRUM 1 1
+        }
+        if ( (n % 13) == 0)
+        {
+             playD BASS_DRUM 1 1
+        }
+        if ( ((n+2) % 4) == 0)
+        {
+            playD ACOUSTIC_SNARE 1 1
+        }
+        if ( (n % 16) == 0)
+        {
+            playD HAND_CLAP 1 1
+        }
+    }
+
+    block "i_1" //C E G B
+    {
+        if(r==1)
+        {
+            playI "Piano" C 1 1
+
+        }
+        if(r==2)
+        {
+            playI "Vibraphone" C 1 1
+
+
+        }
+        if(r==3)
+        {
+            playI "Xylophone" C 1 1
+
+
+        }
+        if(r==4)
+        {
+            playI "Harmonica" C 1 1
+
+        }
+        if(r==5)
+        {
+            playI "Guitar" C 1 1
+
+        }
+        if(r==6)
+        {
+            playI "Flute" C 1 1
+
+
+        }
+        if(r==7)
+        {
+            playI "Acoustic_Bass" C 1 1
+
+
+        }
+        if(r==8)
+        {
+            playI "Trumpet" C 1 1
+
+        }
+
+    }
+
+    loop 128
+    {
+
+
+        run "i_1"
+
+        n = n + 1
+        wait t
+    }
+
+
+}

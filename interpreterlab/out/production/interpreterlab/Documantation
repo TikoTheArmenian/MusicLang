@@ -1,0 +1,38 @@
+- print String s
+prints s
+
+- //
+comments out line
+
+- loop int n, {stuff}
+does what is in brackets n times
+
+- if boolean b, {stuff}
+does what is in brackets if b is true. Some conditonal statements include: ==,<=,>=,<,>
+
+ - Operations: + - / * %
+ operation can be done with these characters which relate to their common operation
+
+
+
+- wait int m
+waits m millis before continuing
+
+- randomRange int n, int m
+returns a random int between n and m
+
+- makeSound int freq1, int freq2, int a, int m, String name
+makes a new .wav file named name that has dual frequencies of freq1 and freq2 at amplitude a for m milliseconds
+
+- play String fileName
+plays any .wav or .mp3 file with given file name
+
+- playI String instrument, String note, int numTimes, int pause  (NOTICE you do not have to imput instrument and note as strings but you can)
+plays the given instrument (list found at https://soundprogramming.net/file-formats/general-midi-instrument-list/) at the given note for numtimes times at a given pause in between
+You must enter the name of the instrument exacly how it is on the webcite with underscores for spaces
+
+
+- playD String drum, int numTimes, int pause  (NOTICE you do not have to imput instrument and note as strings but you can)
+plays the given drum at the given note for numtimes times at a given pause in between (the playable drums include: BASS_DRUM, ACOUSTIC_SNARE, CRASH_CYMBAL_1, PEDAL_HI_HAT, HAND_CLAP)
+They must be entered all caps as shown above
+
